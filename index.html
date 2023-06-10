@@ -17,8 +17,16 @@
 <script type="text/javascript" src="functions.js"></script>
 </head>
 <body>
-	<audio autoplay  controls loop src="music.mp3">
-	</audio>
+	<audio id="myaudio">
+        <source src="music.mp3">
+    </audio>
+    <script lang="javascript">
+        function playmusic(){
+            var music = document.getElementById("myaudio");
+            music.play();
+        }
+    </script>
+    <input type="button" id="button" value="Break My heart" onclick="playmusic()"/>
 <div id="mainDiv">
 	<div id="content">
 		<div id="code">
